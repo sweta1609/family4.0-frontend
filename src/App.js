@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+
+import { LinkedInPage } from "./LinkedInPage";
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+         <div>
+           <input type="text" placeholder="username"/>
+           <input type="text" placeholder="password"/>
+           <button>Login</button>
+         </div>
+         <p>Or</p>
+         <div>
+          Google
+         </div>
+         <div>
+          <h1>Login with LinkedIn</h1>
+          <LinkedInPage/>
+
+         </div>
     </div>
   );
 }
 
 export default App;
+
+
+
